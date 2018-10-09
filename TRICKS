@@ -48,5 +48,5 @@ read from the environment variable TS_MAXCONN at the server start, and cannot be
 set again once the server runs:
 $ ts -K     # we assure we will start the server at the next ts call
 $ TS_MAXCONN=5 ts
-Internally there is a maximum of 1000 connexions that cannot be exceeded without
+Internally there is a maximum of 50,000 connections that cannot be exceeded without
 modifying the source code (server.c).
